@@ -1,0 +1,67 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: z, datatype: float64}
+# - {name: deltaz, datatype: float64}
+# - {name: log10Mstar, unit: dex(solMass), datatype: float64}
+# - {name: deltalog10Mstar, unit: dex(solMass), datatype: float64}
+# - {name: phi, unit: 1 / (dex Mpc3), datatype: float64}
+# - {name: phi_error_low, unit: 1 / (dex Mpc3), datatype: float64}
+# - {name: phi_error_upp, unit: 1 / (dex Mpc3), datatype: float64}
+# - {name: Medianlog10Mstar, unit: dex(solMass), datatype: float64}
+# - {name: AverageCompleteness, datatype: float64}
+# - {name: AverageContamination, datatype: float64}
+# - {name: NGal, datatype: float64}
+# meta: !!omap
+# - observatory: [JWST, HST]
+# - {imf: Kroupa+2001}
+# - {details: Bagpipes sfh_lognorm_dust_Cal_log_10_Z_log_10_age_log_10_zgauss_comp_0.1_contam_1.01}
+# - {x: log10Mstar}
+# - {y: phi}
+# - {type: binned}
+# - {name: Harvey+24}
+# - {sample: EPOCHS v1 (190 arcmin2)}
+# - {reference: Harvey+24}
+# - __serialized_columns__:
+#     Medianlog10Mstar:
+#       __class__: astropy.units.function.logarithmic.Dex
+#       unit: !astropy.units.Unit {unit: dex(solMass)}
+#       value: !astropy.table.SerializedColumn {name: Medianlog10Mstar}
+#     deltalog10Mstar:
+#       __class__: astropy.units.function.logarithmic.Dex
+#       unit: !astropy.units.Unit {unit: dex(solMass)}
+#       value: !astropy.table.SerializedColumn {name: deltalog10Mstar}
+#     log10Mstar:
+#       __class__: astropy.units.function.logarithmic.Dex
+#       unit: !astropy.units.Unit {unit: dex(solMass)}
+#       value: !astropy.table.SerializedColumn {name: log10Mstar}
+#     phi:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: 1 / (dex Mpc3)}
+#       value: !astropy.table.SerializedColumn {name: phi}
+#     phi_error_low:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: 1 / (dex Mpc3)}
+#       value: !astropy.table.SerializedColumn {name: phi_error_low}
+#     phi_error_upp:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: 1 / (dex Mpc3)}
+#       value: !astropy.table.SerializedColumn {name: phi_error_upp}
+# schema: astropy-2.0
+z deltaz log10Mstar deltalog10Mstar phi phi_error_low phi_error_upp Medianlog10Mstar AverageCompleteness AverageContamination NGal
+7.0 1.0 8.125 0.75 0.004648066 0.0009663254999999999 0.001005947 8.069493 0.3122176 0.2324906 252.263
+7.0 1.0 8.875 0.75 0.0008800496 0.0001818528 0.0002050195 8.769846 0.6963365 0.1768578 121.365
+7.0 1.0 9.625 0.75 0.000144585 4.472873e-05 5.4975640000000005e-05 9.459986 0.7892847 0.1042665 20.363
+7.0 1.0 10.375 0.75 4.103339e-05 2.307823e-05 2.9677200000000004e-05 10.39225 0.9664012 0.0 5.33
+7.0 1.0 11.125 0.75 3.531709e-06 3.531709e-06 9.310563e-06 10.8066 1.0 0.0 0.679
+8.0 1.0 8.125 0.75 0.001494256 0.0003266845 0.0003479856 8.076281 0.346984 0.2536648 101.448
+8.0 1.0 8.875 0.75 0.0001984044 5.168205e-05 6.424962e-05 8.745276 0.7515371 0.1662176 36.665
+8.0 1.0 9.625 0.75 2.160791e-05 9.689113e-06 1.553769e-05 9.466233 0.9066286 0.105748 4.887
+9.0 1.0 8.125 0.75 0.0007820638 0.000203024 0.0002212915 8.000383 0.2843071 0.3002946 39.379
+9.0 1.0 8.875 0.75 5.564469e-05 2.206801e-05 3.663063e-05 8.729887 0.7027885 0.1725736 8.614
+9.0 1.0 9.625 0.75 4.662822e-06 4.662822e-06 1.905287e-05 9.469509 0.9309423 0.1787804 1.007
+10.5 2.0 8.125 0.75 0.0004715192 0.00010261260000000001 0.00011120910000000002 8.075625 0.2525076 0.1788751 43.862
+10.5 2.0 8.875 0.75 5.672269e-05 1.726835e-05 2.410198e-05 8.734794 0.6496054 0.1803767 14.89
+10.5 2.0 9.625 0.75 2.648729e-06 2.648729e-06 1.008741e-05 9.416229 0.9291571 0.0 1.248
+12.5 2.0 8.125 0.75 0.0001390767 6.199214e-05 6.787337e-05 8.06561 0.4670294 0.3970832 5.571
+12.5 2.0 8.875 0.75 1.581652e-05 9.366959e-06 2.400825e-05 8.682843 0.8924762 0.0 3.851

@@ -1,0 +1,43 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: z, datatype: float64}
+# - {name: deltaz, datatype: float64}
+# - {name: smd_50, unit: dex(solMass / Mpc3), datatype: float64}
+# - {name: smd_16, unit: dex(solMass / Mpc3), datatype: float64}
+# - {name: smd_84, unit: dex(solMass / Mpc3), datatype: float64}
+# - {name: smd_best, unit: dex(solMass / Mpc3), datatype: float64}
+# meta: !!omap
+# - observatory: [JWST, HST]
+# - {imf: Kroupa+2001}
+# - {details: Bagpipes sfh_lognorm_dust_Cal_log_10_Z_log_10_age_log_10_zgauss_comp_0.1_contam_1.01}
+# - {x: z}
+# - {y: smd_50}
+# - {type: binned}
+# - {name: Harvey+24}
+# - {sample: EPOCHS v1 (190 arcmin2)}
+# - {reference: Harvey+24}
+# - {comments: Integral of Schechter function from 10^8 to 10^13 solMass}
+# - __serialized_columns__:
+#     smd_16:
+#       __class__: astropy.units.function.logarithmic.Dex
+#       unit: !astropy.units.Unit {unit: dex(solMass / Mpc3)}
+#       value: !astropy.table.SerializedColumn {name: smd_16}
+#     smd_50:
+#       __class__: astropy.units.function.logarithmic.Dex
+#       unit: !astropy.units.Unit {unit: dex(solMass / Mpc3)}
+#       value: !astropy.table.SerializedColumn {name: smd_50}
+#     smd_84:
+#       __class__: astropy.units.function.logarithmic.Dex
+#       unit: !astropy.units.Unit {unit: dex(solMass / Mpc3)}
+#       value: !astropy.table.SerializedColumn {name: smd_84}
+#     smd_best:
+#       __class__: astropy.units.function.logarithmic.Dex
+#       unit: !astropy.units.Unit {unit: dex(solMass / Mpc3)}
+#       value: !astropy.table.SerializedColumn {name: smd_best}
+# schema: astropy-2.0
+z deltaz smd_50 smd_16 smd_84 smd_best
+7.0 1.0 6.364449433789387 6.1983428595536 6.505157772892863 6.41713429304482
+8.0 1.0 5.504074420318441 5.372896174639739 5.644506880988967 5.464701759985168
+9.0 1.0 5.027700425205735 4.8438382506713715 5.19998422487433 5.024701195191868
+10.5 2.0 4.931822041856181 4.783067057548593 5.112710572450359 4.856934185566429
